@@ -1,0 +1,28 @@
+# Outputs hold ticket text and raw model answers: never commit them.
+.agent/
+.issues/
+out/
+results.json
+report.md
+eval-*.json
+backtest*.json
+triage.json
+*.tmp
+
+# Your own copies of the example configs may describe private systems.
+repository.json
+taxonomy.json
+labels.json
+outcomes.json
+
+# Secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/

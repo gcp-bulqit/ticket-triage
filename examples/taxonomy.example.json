@@ -1,0 +1,92 @@
+{
+  "_about": "An example taxonomy for python -m ticket_triage.label. Replace the 'area' group with your own product areas. Write every label description as: what it is, what it excludes, and its nearest neighbour. Group questions and label descriptions are sent to the model. effort_bands are uncalibrated placeholders; fit yours with --calibrate-effort.",
+  "groups": {
+    "type": {
+      "question": "What kind of change does `issue` ask for?",
+      "labels": {
+        "Bug": "Behaviour contradicts what the product states or obviously intends. Something that works as designed but is unsatisfying is Enhancement, not Bug.",
+        "Enhancement": "Adds or changes a capability of an existing feature so it does more, or does it better. If behaviour contradicts what the product intends, it is Bug; if the change only makes it faster or cheaper, it is Optimization.",
+        "Feature": "New user-facing or system-facing functionality that does not extend an existing feature. If it extends something that already exists, it is Enhancement.",
+        "Refactor": "Internal restructuring with no change to external behaviour. Code stays and is reshaped. If code is being deleted rather than reshaped, it is Cleanup.",
+        "Cleanup": "Removing dead code, outdated config, unused dependencies or obsolete data. The result is less, not different. If behaviour is preserved by reshaping rather than deleting, it is Refactor.",
+        "Optimization": "A measurable improvement to speed, cost or resource use, with behaviour unchanged. If the change alters what the user gets rather than how fast they get it, it is Enhancement.",
+        "Chore": "Upkeep that changes neither the product nor the code's structure: dependency upgrades, CI and tooling configuration, release housekeeping. If it deletes something obsolete, it is Cleanup; if it reshapes code, it is Refactor.",
+        "Question": "Asks for an answer, an explanation or an investigation, not a change. If the ticket asks for something to be built or fixed, pick that type instead, even when it is phrased as a question."
+      }
+    },
+    "area": {
+      "question": "Which part of the product is `issue` about?",
+      "labels": {
+        "Accounts": "Sign-in, sessions, profiles and permissions. Who someone is and what they may do. If the ticket is about what a signed-in person sees on a page, it is the area of that page.",
+        "Billing": "Charges, invoices, refunds and plans. If the ticket only changes how a price is displayed, with no change to what is charged, it is the area of that page.",
+        "Search": "Finding things: search boxes, filters, sorting and result ranking. If the ticket is about the content shown once something is found, it is the area that owns that content.",
+        "Reporting": "Dashboards, exports and scheduled reports. If the ticket changes the underlying data rather than how it is reported, pick the area that owns the data.",
+        "none": "No single area fits, or the ticket spans the whole product. Prefer this over guessing."
+      }
+    }
+  },
+  "dimensions": {
+    "workability": {
+      "type": "noul",
+      "truth": "pr",
+      "instructions": "Can `issue` be resolved by changing code in the repository alone, so that merging and deploying is all that is needed? A routine deploy of merged code, including migrations that run on deploy, does not count as a manual step.",
+      "criteria": {
+        "true": "Merging and deploying code resolves it.",
+        "false": "Someone must also act outside the repository: a third-party dashboard setting, an environment variable, a manual data correction, an edit to content managed outside the repository, or a business task."
+      }
+    },
+    "ambiguity": {
+      "type": "noul",
+      "truth": "human_answer",
+      "_truth_note": "Scored against 'a person had to answer a question', not against 'a decision brief was written': a pipeline may write briefs by policy as much as from genuine ambiguity, which would measure the process, not the property.",
+      "instructions": "Does `issue` leave open a product, business or design question that must be answered before implementation can start? Ordinary implementation choices an engineer would make do not count.",
+      "criteria": {
+        "true": "An open question blocks the start of work.",
+        "false": "What to build is clear enough to begin."
+      }
+    },
+    "effort": {
+      "type": "score",
+      "truth": null,
+      "instructions": "If `issue` were implemented, how large would the change be?",
+      "criteria": [
+        "Tiny: a one-line or single-value change, such as a word, a constant or a flag",
+        "Small: a contained change to a few files in one area",
+        "Medium: a feature or fix spanning one area, with tests",
+        "Large: several areas, or schema plus interface plus background work",
+        "Epic: too big for one pull request; it should be split"
+      ]
+    },
+    "blast_radius": {
+      "type": "score",
+      "truth": null,
+      "instructions": "If the change for `issue` were made incorrectly and shipped, how bad would the consequence be?",
+      "criteria": [
+        "Cosmetic: someone sees something slightly wrong",
+        "Contained: one feature misbehaves for some users, and it is obvious",
+        "Serious: data is shown wrongly, or a flow breaks, and it may not be obvious",
+        "Severe: money, access control, or stored data is wrong",
+        "Critical: money moves incorrectly at scale, or access control fails open, or data is lost"
+      ]
+    },
+    "locatability": {
+      "type": "noul",
+      "truth": null,
+      "instructions": "Does `issue` say enough to find where the change belongs, by naming a file, a symbol, a screen, a route or a flow precisely enough to locate?",
+      "criteria": {
+        "true": "The place to change is identifiable from the ticket.",
+        "false": "The ticket does not locate the work; someone must first find where it lives."
+      }
+    }
+  },
+  "historic": {
+    "Improvement": ["type", "Enhancement"],
+    "Tech debt": ["type", "Refactor"],
+    "Size: S": ["effort", "S"],
+    "Size: M": ["effort", "M"],
+    "Size: L": ["effort", "L"],
+    "Size: XL": ["effort", "XL"],
+    "Misc": null
+  },
+  "effort_bands": [[1.0, "S"], [2.0, "M"], [3.0, "L"], [99.0, "XL"]]
+}

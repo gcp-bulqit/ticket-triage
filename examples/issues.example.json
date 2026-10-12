@@ -1,0 +1,251 @@
+[
+ {
+  "identifier": "ENG-101",
+  "title": "Synthetic: rename the 'Save' button on the settings page to 'Save changes'",
+  "description": "The button in `SettingsForm` (src/settings/SettingsForm.tsx) should read 'Save changes'.\n\nSession details\nbrowser: example\nconsole: example",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": "2026-01-03T08:00:00.000Z",
+  "state": {
+   "name": "In Progress"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Improvement"
+    },
+    {
+     "name": "Size: S"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": [
+    {
+     "createdAt": "2026-01-02T10:00:00.000Z",
+     "body": "Agreed, small copy change.",
+     "user": {
+      "name": "Example Person One"
+     }
+    },
+    {
+     "createdAt": "2026-01-02T11:00:00.000Z",
+     "body": "changed feedback status to \"In progress\" in FeedbackTool",
+     "user": {
+      "name": "Example Person One"
+     }
+    },
+    {
+     "createdAt": "2026-01-03T09:00:00.000Z",
+     "body": "Picked up.",
+     "user": {
+      "name": "Example Person Two"
+     }
+    },
+    {
+     "createdAt": "2026-01-04T09:00:00.000Z",
+     "body": "Draft PR opened.",
+     "user": {
+      "name": "Example Person Two"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "identifier": "ENG-102",
+  "title": "Synthetic: add a sort option to the projects list",
+  "description": "Users want to sort projects by last updated.",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": null,
+  "state": {
+   "name": "Todo"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Feature"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": [
+    {
+     "createdAt": "2026-01-01T10:00:00.000Z",
+     "body": "Comment number 1.",
+     "user": {
+      "name": "Example Person Two"
+     }
+    },
+    {
+     "createdAt": "2026-01-02T10:00:00.000Z",
+     "body": "Comment number 2.",
+     "user": {
+      "name": "Example Person Three"
+     }
+    },
+    {
+     "createdAt": "2026-01-03T10:00:00.000Z",
+     "body": "Comment number 3.",
+     "user": {
+      "name": "Example Person One"
+     }
+    },
+    {
+     "createdAt": "2026-01-04T10:00:00.000Z",
+     "body": "Comment number 4.",
+     "user": {
+      "name": "Example Person Two"
+     }
+    },
+    {
+     "createdAt": "2026-01-05T10:00:00.000Z",
+     "body": "Comment number 5.",
+     "user": {
+      "name": "Example Person Three"
+     }
+    },
+    {
+     "createdAt": "2026-01-06T10:00:00.000Z",
+     "body": "Comment number 6.",
+     "user": {
+      "name": "Example Person One"
+     }
+    },
+    {
+     "createdAt": "2026-01-07T10:00:00.000Z",
+     "body": "Comment number 7.",
+     "user": {
+      "name": "Example Person Two"
+     }
+    },
+    {
+     "createdAt": "2026-01-08T10:00:00.000Z",
+     "body": "Comment number 8.",
+     "user": {
+      "name": "Example Person Three"
+     }
+    },
+    {
+     "createdAt": "2026-01-09T10:00:00.000Z",
+     "body": "Comment number 9.",
+     "user": {
+      "name": "Example Person One"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "identifier": "ENG-201",
+  "title": "Synthetic: export fails on an empty table",
+  "description": "Clicking export with no rows shows an error.",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": null,
+  "state": {
+   "name": "Todo"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Bug"
+    },
+    {
+     "name": "Size: S"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": []
+  }
+ },
+ {
+  "identifier": "ENG-202",
+  "title": "Synthetic: let people pick a default page size",
+  "description": "Which sizes should we offer?",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": null,
+  "state": {
+   "name": "Todo"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Improvement"
+    },
+    {
+     "name": "Size: M"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": []
+  }
+ },
+ {
+  "identifier": "ENG-203",
+  "title": "Synthetic: decide on the retention period for old exports",
+  "description": "We need a policy before building anything.",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": null,
+  "state": {
+   "name": "Todo"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Misc"
+    },
+    {
+     "name": "Size: L"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": []
+  }
+ },
+ {
+  "identifier": "ENG-204",
+  "title": "Synthetic: upgrade the test runner",
+  "description": "Routine upgrade.",
+  "priority": 3,
+  "updatedAt": "2026-01-10T12:00:00.000Z",
+  "startedAt": null,
+  "state": {
+   "name": "Todo"
+  },
+  "project": {
+   "name": "Example project"
+  },
+  "labels": {
+   "nodes": [
+    {
+     "name": "Chore"
+    }
+   ]
+  },
+  "comments": {
+   "nodes": []
+  }
+ }
+]

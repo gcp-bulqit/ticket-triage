@@ -1,0 +1,837 @@
+[
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.9
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.85,
+    "probabilities": {
+     "already_resolved": 0.03,
+     "decision_first": 0.03,
+     "ops_only": 0.03,
+     "pr_only": 0.85,
+     "pr_plus_ops": 0.03,
+     "question_or_info": 0.03
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 1.2
+   }
+  },
+  "bucket": "pure_pr",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-101",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: rename a settings label",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "every gate passes"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.4
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.8
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.5,
+    "probabilities": {
+     "already_resolved": 0.1,
+     "decision_first": 0.1,
+     "ops_only": 0.1,
+     "pr_only": 0.5,
+     "pr_plus_ops": 0.1,
+     "question_or_info": 0.1
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 2.0
+   }
+  },
+  "bucket": "likely_pr_review",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-102",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: add a sort option to a list view",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "outside step 0.4 fails the pure gate"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.45
+   },
+   "needs_outside_step": {
+    "noul": 0.2
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.7
+   },
+   "path": {
+    "choice": "decision_first",
+    "confidence": 0.5,
+    "probabilities": {
+     "already_resolved": 0.0375,
+     "decision_first": 0.5,
+     "ops_only": 0.0375,
+     "pr_only": 0.35,
+     "pr_plus_ops": 0.0375,
+     "question_or_info": 0.0375
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 1.5
+   }
+  },
+  "bucket": "likely_pr_review",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-103",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: change the default page size",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "path says decision_first but flags lean PR: probably-PR wins before the decision check"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.2
+   },
+   "needs_outside_step": {
+    "noul": 0.8
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.8
+   },
+   "path": {
+    "choice": "pr_plus_ops",
+    "confidence": 0.85,
+    "probabilities": {
+     "already_resolved": 0.0125,
+     "decision_first": 0.0125,
+     "ops_only": 0.0125,
+     "pr_only": 0.1,
+     "pr_plus_ops": 0.85,
+     "question_or_info": 0.0125
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 2.0
+   }
+  },
+  "bucket": "pr_plus_ops",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-104",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: add a webhook and register it in a provider dashboard",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "needs a step outside the repo"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.8
+   },
+   "needs_outside_step": {
+    "noul": 0.2
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.6
+   },
+   "path": {
+    "choice": "decision_first",
+    "confidence": 0.85,
+    "probabilities": {
+     "already_resolved": 0.0125,
+     "decision_first": 0.85,
+     "ops_only": 0.0125,
+     "pr_only": 0.1,
+     "pr_plus_ops": 0.0125,
+     "question_or_info": 0.0125
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 3.0
+   }
+  },
+  "bucket": "needs_decision",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-105",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: redesign the onboarding flow",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "open product question"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.9
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.1
+   },
+   "path": {
+    "choice": "ops_only",
+    "confidence": 0.9,
+    "probabilities": {
+     "already_resolved": 0.0125,
+     "decision_first": 0.0125,
+     "ops_only": 0.9,
+     "pr_only": 0.05,
+     "pr_plus_ops": 0.0125,
+     "question_or_info": 0.0125
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 0.5
+   }
+  },
+  "bucket": "not_pr",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-106",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: rotate an API credential",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "ops only"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.9
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.7
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.6,
+    "probabilities": {
+     "already_resolved": 0.08,
+     "decision_first": 0.08,
+     "ops_only": 0.08,
+     "pr_only": 0.6,
+     "pr_plus_ops": 0.08,
+     "question_or_info": 0.08
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 0.5
+   }
+  },
+  "bucket": "already_resolved",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-107",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: broken link in footer (fixed, see comments)",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "a comment says it is fixed"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.1
+   },
+   "evidence_shows_done": {
+    "noul": 0.8
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.9
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.9,
+    "probabilities": {
+     "already_resolved": 0.02,
+     "decision_first": 0.02,
+     "ops_only": 0.02,
+     "pr_only": 0.9,
+     "pr_plus_ops": 0.02,
+     "question_or_info": 0.02
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 1.0
+   }
+  },
+  "bucket": "already_resolved",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 1,
+   "pull_requests": [
+    {
+     "merged": true,
+     "number": 42,
+     "state": "MERGED",
+     "title": "Fix it (ENG-108)"
+    }
+   ],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-108",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: export button errors on empty table",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "merged PR names it and evidence says done"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.1
+   },
+   "evidence_shows_done": {
+    "noul": 0.7
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.9
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.9,
+    "probabilities": {
+     "already_resolved": 0.02,
+     "decision_first": 0.02,
+     "ops_only": 0.02,
+     "pr_only": 0.9,
+     "pr_plus_ops": 0.02,
+     "question_or_info": 0.02
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 1.0
+   }
+  },
+  "bucket": "likely_pr_review",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-109",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: retry failed background job",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "evidence reads done but no merged PR: not a fact, so probably-PR"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.9
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.8,
+    "probabilities": {
+     "already_resolved": 0.04,
+     "decision_first": 0.04,
+     "ops_only": 0.04,
+     "pr_only": 0.8,
+     "pr_plus_ops": 0.04,
+     "question_or_info": 0.04
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 3.4
+   }
+  },
+  "bucket": "likely_pr_review",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-110",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: rebuild the reporting module",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "size 3.4 fails the pure gate"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.1
+   },
+   "needs_outside_step": {
+    "noul": 0.1
+   },
+   "needs_prod_investigation": {
+    "noul": 0.1
+   },
+   "needs_repo_change": {
+    "noul": 0.1
+   },
+   "path": {
+    "choice": "question_or_info",
+    "confidence": 0.9,
+    "probabilities": {
+     "already_resolved": 0.0125,
+     "decision_first": 0.0125,
+     "ops_only": 0.0125,
+     "pr_only": 0.05,
+     "pr_plus_ops": 0.0125,
+     "question_or_info": 0.9
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 0.2
+   }
+  },
+  "bucket": "not_pr",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-111",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: how are invoices numbered?",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "a question"
+ },
+ {
+  "answers": {
+   "already_resolved": {
+    "noul": 0.05
+   },
+   "evidence_shows_done": {
+    "noul": 0.05
+   },
+   "fix_location_known": {
+    "noul": 0.7
+   },
+   "needs_decision": {
+    "noul": 0.2
+   },
+   "needs_outside_step": {
+    "noul": 0.2
+   },
+   "needs_prod_investigation": {
+    "noul": 0.6
+   },
+   "needs_repo_change": {
+    "noul": 0.3
+   },
+   "path": {
+    "choice": "pr_only",
+    "confidence": 0.2,
+    "probabilities": {
+     "already_resolved": 0.16,
+     "decision_first": 0.16,
+     "ops_only": 0.16,
+     "pr_only": 0.2,
+     "pr_plus_ops": 0.16,
+     "question_or_info": 0.16
+    }
+   },
+   "requested_thing_exists": {
+    "noul": 0.1
+   },
+   "size": {
+    "confidence": 0.6,
+    "legend": [
+     "Tiny",
+     "Small",
+     "Medium",
+     "Large",
+     "Epic"
+    ],
+    "score": 1.0
+   }
+  },
+  "bucket": "not_pr",
+  "evidence": {
+   "commits": [],
+   "merged_pr_count": 0,
+   "pull_requests": [],
+   "referenced_files": [],
+   "referenced_symbols": []
+  },
+  "id": "ENG-112",
+  "model": "jev-example",
+  "priority": 3,
+  "state": "Todo",
+  "title": "Synthetic: something feels slow",
+  "usage": {
+   "input_tokens": 2000,
+   "output_tokens": 0
+  },
+  "why": "nothing clears a threshold; falls through to not_pr"
+ }
+]

@@ -1,0 +1,23 @@
+{
+  "_about": "Copy to repository.json and describe YOUR repository. Every field except those starting with an underscore is sent to the model with every issue, so describe the codebase and what a pull request to it can and cannot change, not your business, customers or suppliers. 'deploy_includes' is a policy choice: list only what really happens on its own when merged code is deployed. Anything not listed counts as a manual step outside the repository. Leave it empty if a deploy ships code and nothing else.",
+  "name": "webapp",
+  "contains": [
+    "The web application: pages, components and client-side logic",
+    "Server-side API routes and request handlers",
+    "Background job code (the job definitions and handlers)",
+    "Database schema and migrations",
+    "Email and notification code (message copy stored in the database is not here)",
+    "Tests, build configuration and developer documentation"
+  ],
+  "does_not_contain": [
+    "Settings in third-party dashboards: payments, hosting, authentication, error tracking, email delivery",
+    "Environment variable values and secrets",
+    "Production data, and manual one-off data corrections",
+    "Content managed outside the repository: CMS pages, copy stored in a database",
+    "Infrastructure managed elsewhere: DNS, cloud accounts, separately deployed services",
+    "Operational tasks done by hand: account changes, reports run by hand"
+  ],
+  "deploy_includes": [
+    "Database migrations, which run automatically on deploy"
+  ]
+}
