@@ -1,0 +1,5 @@
+{
+  "_about": "Hand labels for --eval. positive: issues that were resolved by a merged pull request. negative: issues closed with no code change, or judged not to be code work. Synthetic ids; these match examples/results.example.json for the offline tests.",
+  "positive": ["ENG-101", "ENG-102", "ENG-105", "ENG-109"],
+  "negative": ["ENG-103", "ENG-106", "ENG-107", "ENG-112"]
+}

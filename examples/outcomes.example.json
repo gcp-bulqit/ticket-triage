@@ -1,0 +1,6 @@
+{
+  "ENG-201": {"pr": true, "decision": false, "human_answer": false, "cycles": 1},
+  "ENG-202": {"pr": true, "decision": true, "human_answer": false, "cycles": 2},
+  "ENG-203": {"pr": false, "decision": true, "human_answer": true, "cycles": 0},
+  "ENG-204": {"pr": false, "decision": false, "human_answer": false, "cycles": 0}
+}
